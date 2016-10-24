@@ -1,0 +1,11 @@
+.headings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.friends {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0.5em 1em 0.5em;
+    border-style: solid;
+}

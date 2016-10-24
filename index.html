@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="friendsList">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title></title>
+        <meta name="author" content="name">
+        <meta name="description" content="description here">
+        <meta name="keywords" content="keywords,here">
+        <!-- Stylesheets and Resets -->
+        <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"/>
+        <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    </head>
+    <body ng-controller="mainCtrl">
+        <h1>My Friends:</h1>
+        <div class="headings">
+            <h2>Name:</h2>
+            <h2>Age:</h2>
+            <h2>Sex:</h2>
+            <h2>Hometown:</h2>
+        </div>
+        <div class="friends" ng-repeat="friend in friends">
+            <h3>{{friend.name}}</h3>
+            <p>{{friend.age}}</p>
+            <p>{{friend.sex}}</p>
+            <p>{{friend.hometown}}</p>
+        </div>
+        <!-- Scripts, Frameworks, Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/mainCtrl.js"></script>
+    </body>
+</html>
